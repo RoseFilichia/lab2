@@ -1,0 +1,85 @@
+* {
+  margin: 10px;
+  font-family: 'Poiret One', sans-serif;
+}
+
+h1 {
+  font-family: 'Poiret One', sans-serif;
+}
+
+form {
+  text-align: center;
+  background-color: #bfdde1;
+  padding: 20px;
+  margin: 20px;
+}
+
+#box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin: 5px 50px;
+  text-align: center;
+}
+
+#weatherResults {
+  text-align: center;
+  background-color: #bfdde1;
+  padding: 10px;
+  margin: 20px;
+}
+
+#forecastResults {
+  text-align: center;
+  background-color: #bfdde1;
+  /*padding: 20px;*/
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+/* The Masonry Container */
+.grid {
+  margin: 1.5em auto;
+  max-width: 768px;
+  column-gap: 1.5em;
+  column-count: 3;
+}
+
+/* The Masonry Brick */
+.grid-item, .box, h1, footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  #forecastResults {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  #forecastResults {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  #forecastResults {
+    column-count: 2;
+  }
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+}
